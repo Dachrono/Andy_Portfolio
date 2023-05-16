@@ -1,6 +1,11 @@
-const btnBar = document.querySelector('.fa');
-const a = document.getElementById('link');
+// eslint-disable-next-line no-unused-vars
+function hello() {
+  const a = document.getElementById('navBar').style.display;
 
-btnBar.addEventListener('click', function(e) {
-  a.classList.add("link");
-})
+  if (a === 'none') {
+    document.getElementById('navBar').style.display = 'block';
+    document.getElementById('menu').style.position = 'fixed';
+  } else {
+    document.getElementById('navBar').style.display = 'none';
+  }
+}
