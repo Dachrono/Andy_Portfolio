@@ -22,16 +22,11 @@ body {
   display: block;
 }
 
-.NavBar a:hover {
-  background-color: #172b4d;
-  color: #36b37e;
-}
-
 .menu {
   background-color: white;
   width: 100%;
   display: flex;
-  justify-content:end;
+  justify-content: end;
 }
 
 .menu a {
@@ -41,6 +36,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.NavBar a:hover {
+  background-color: #172b4d;
+  color: #36b37e;
 }
 
 .menu a:hover {
@@ -441,7 +441,7 @@ body {
   .NavBar {
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 0.1px;
     display: flex;
     position: absolute;
     justify-content: center;
