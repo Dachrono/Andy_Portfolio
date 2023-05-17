@@ -6,13 +6,11 @@ body {
 }
 
 .NavBar {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
   width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: end;
-}
-
-.link {
+  margin-top: 40px;
   display: none;
 }
 
@@ -24,9 +22,18 @@ body {
   display: block;
 }
 
-.NavBar a:hover {
-  background-color: #172b4d;
-  color: #36b37e;
+.menu {
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.menu button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #ffff;
 }
 
 .container {
@@ -72,7 +79,7 @@ body {
   padding: 10px;
 }
 
-.container button {
+.socialButton button {
   background-color: white;
   width: 40px;
   height: 40px;
@@ -419,14 +426,17 @@ body {
     height: 500px;
   }
 
-  .link {
+  .NavBar {
     width: 100%;
+    height: auto;
+    margin-top: 0.1px;
     display: flex;
+    position: absolute;
     justify-content: center;
     gap: 2px;
   }
 
-  .link a {
+  .NavBar a {
     font-size: 10px;
   }
 
