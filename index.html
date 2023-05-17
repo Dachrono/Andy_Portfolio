@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="JS/script.js"></script>
@@ -12,14 +11,14 @@
 </head>
 <body>
     <section class="container">
-        <nav id="navBar" class="NavBar"> 
-            <a href="#cards">Portfolio</a>
-            <a href="#About">About</a> 
-            <a href="#contForm">Contact</a>  
+        <nav id="navBar" class="NavBar" style="display: none;"> 
+            <a href="#cards" onclick="cerrar()">Portfolio</a>
+            <a href="#About" onclick="cerrar()">About</a> 
+            <a href="#contForm" onclick="cerrar()">Contact</a>  
         </nav>
         
         <div id="menu" class="menu">
-            <a href="javascript:void(0)" onclick="hello()" class="fa fa-bars"></a>
+            <button onclick="hamFuntion()"><img id="barClose" src="Pics/Icons/nav-icon.png" alt="image"></button>
         </div>  
     
         <div class="title">

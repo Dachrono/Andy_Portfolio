@@ -23,29 +23,17 @@ body {
 }
 
 .menu {
-  background-color: white;
+  background-color: #ffff;
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
-.menu a {
+.menu button {
   width: 40px;
   height: 40px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.NavBar a:hover {
-  background-color: #172b4d;
-  color: #36b37e;
-}
-
-.menu a:hover {
-  background-color: #172b4d;
-  color: #36b37e;
+  border: none;
+  background-color: #ffff;
 }
 
 .container {
@@ -91,7 +79,7 @@ body {
   padding: 10px;
 }
 
-.container button {
+.socialButton button {
   background-color: white;
   width: 40px;
   height: 40px;
