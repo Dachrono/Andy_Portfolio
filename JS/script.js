@@ -15,3 +15,6 @@ function cerrar() {
   document.getElementById('navBar').style.display = 'none';
   document.getElementById('barClose').src = 'Pics/Icons/nav-icon.png';
 }
+
+
+///for the first commit 
