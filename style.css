@@ -421,6 +421,10 @@ body {
   align-items: center;
 }
 
+.errMess {
+  color: #ff0000;
+}
+
 .advise {
   margin-left: 5%;
   margin-right: 5%;
