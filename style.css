@@ -660,8 +660,8 @@ body {
     margin: 10px;
   }
 
-  .pop img {
-    width: 90%;
+  .projIma {
+    max-width: 550px;
   }
 
   .items {

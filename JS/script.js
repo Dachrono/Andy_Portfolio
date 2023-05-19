@@ -102,7 +102,7 @@ for (let i = 0; i < cardsInfo.length; i += 1) {
           <button class="popClose"><img srcset="Pics/Icons/xiconW.png 767w, Pics/Icons/xicon.png 1124w" alt="Icon"></button>
         </div>
       
-        <img srcset="Pics/imgPop.png 767w, Pics/imgPop2.png 1124w" alt="Photo">
+        <img class="projIma" srcset="Pics/imgPop.png 767w, Pics/imgPop2.png 1124w" alt="Photo">
 
         <div class="items">
 
