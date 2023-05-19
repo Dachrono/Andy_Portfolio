@@ -69,67 +69,79 @@ const cardsInfo = [
 
 const cards = document.querySelector('.Cards');
 
-for (let i = 0; i < cardsInfo.length; i += 1) {
+function wCard(index) {
   const element = document.createElement('section');
-  element.classList.remove(`WorksCard${i}`);
-  element.classList.add(`WorksCard${i + 1}`);
+  element.classList.remove(`WorksCard${index}`);
+  element.classList.add(`WorksCard${index + 1}`);
   element.innerHTML = `
     <div class="card1">
     </div>
     <div class="card2">
-      <h1>${cardsInfo[i].name}</h1>
+      <h1>${cardsInfo[index].name}</h1>
     </div>
     <ul class="card3">
-      <li>${cardsInfo[i].technologies[0]}</li>
-      <li>${cardsInfo[i].technologies[1]}</li>
-      <li>${cardsInfo[i].technologies[2]}</li>
-      <li>${cardsInfo[i].technologies[3]}</li>
+      <li>${cardsInfo[index].technologies[0]}</li>
+      <li>${cardsInfo[index].technologies[1]}</li>
+      <li>${cardsInfo[index].technologies[2]}</li>
+      <li>${cardsInfo[index].technologies[3]}</li>
     </ul>
     <div class="card4">
       <button class="CardBut">See project</button>
     </div>`;
-  cards.appendChild(element);
+  return element;
+}
 
-  const butSelect = element.querySelector('.CardBut');
-  butSelect.addEventListener('click', () => {
-    const newSec = document.createElement('section');
-    newSec.classList.add('pop');
-    document.querySelector('body').appendChild(newSec);
-    const popup = document.querySelector('.pop');
-    popup.innerHTML = `
-      <div class="popFlex">
-        <div class="closeButton">
-          <button class="popClose"><img srcset="Pics/Icons/xiconW.png 767w, Pics/Icons/xicon.png 1124w" alt="Icon"></button>
-        </div>
-      
-        <img class="projIma" srcset="Pics/imgPop.png 767w, Pics/imgPop2.png 1124w" alt="Photo">
-
-        <div class="items">
-
-          <h2 class="item1">Keeping track of hundreds of components</h2>
-
-          <ul class="item2">
-            <li>${cardsInfo[i].technologies[0]}</li>
-            <li>${cardsInfo[i].technologies[1]}</li>
-            <li>${cardsInfo[i].technologies[2]}</li>
-            <li>${cardsInfo[i].technologies[3]}</li>
-          </ul>
-
-          <p class="item3">${cardsInfo[i].description}
-          </p>
-
-          <div class="popButton item4">
-              <button>See source<img src="Pics/Icons/IconExp.png" alt="icon"></button>
-              <button>See live<img src="Pics/Icons/IconGit.png" alt="icon"></button>
-          </div>
-
-        </div>  
+function popCard(index) {
+  const newSec = document.createElement('section');
+  newSec.classList.add('pop');
+  document.querySelector('body').appendChild(newSec);
+  const popup = document.querySelector('.pop');
+  popup.innerHTML = `
+    <div class="popFlex">
+      <div class="closeButton">
+        <button class="popClose"><img srcset="Pics/Icons/xiconW.png 767w, Pics/Icons/xicon.png 1124w" alt="Icon"></button>
       </div>
+      
+      <img class="projIma" srcset="Pics/imgPop.png 767w, Pics/imgPop2.png 1124w" alt="Photo">
 
-    `;
-    const btnC = newSec.querySelector('.popClose');
-    btnC.addEventListener('click', () => {
-      newSec.remove();
-    });
+      <div class="items">
+
+        <h2 class="item1">Keeping track of hundreds of components</h2>
+
+        <ul class="item2">
+          <li>${cardsInfo[index].technologies[0]}</li>
+          <li>${cardsInfo[index].technologies[1]}</li>
+          <li>${cardsInfo[index].technologies[2]}</li>
+          <li>${cardsInfo[index].technologies[3]}</li>
+        </ul>
+
+        <p class="item3">${cardsInfo[index].description}
+        </p>
+
+        <div class="popButton item4">
+          <button>See source<img src="Pics/Icons/IconExp.png" alt="icon"></button>
+          <button>See live<img src="Pics/Icons/IconGit.png" alt="icon"></button>
+        </div>
+
+      </div>  
+    </div>
+  `;
+  return newSec;
+}
+
+function closePop(newSec) {
+  const btnC = newSec.querySelector('.popClose');
+  btnC.addEventListener('click', () => {
+    newSec.remove();
+  });
+}
+
+for (let i = 0; i < cardsInfo.length; i += 1) {
+  const card = wCard(i);
+  cards.appendChild(card);
+  const butSelect = card.querySelector('.CardBut');
+  butSelect.addEventListener('click', () => {
+    const pop = popCard(i);
+    closePop(pop);
   });
 }
