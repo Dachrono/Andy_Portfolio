@@ -116,7 +116,8 @@
     
             <form action="https://formspree.io/f/mbjewkoo" method="post" class="contact">
                 <input name="Name" class="Fullname" type="text" placeholder="Full name" maxlength="30" required>
-                <input name="Email" class="EmailAddress" type="email" placeholder="Email address" required>   
+                <input id="email" name="Email" class="EmailAddress" type="email" placeholder="Email address" required>
+                <span class="errMess">Please enter your email in all lowercase</span>   
                 <textarea name="Text" type="text" placeholder="Hey I’d like to connect to..." maxlength="500" required></textarea>
                 <button type="submit" class="formButton">Get in touch</button>
             </form>
@@ -144,5 +145,6 @@
     </section>
 
     <script src="JS/script.js"></script>
+    <script src="JS/validation.js"></script>
 </body>
 </html>
