@@ -20,7 +20,7 @@ const cardsInfo = [
   {
     name: 'The truck savers',
     description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, php, DOM js',
-    image: ['../Pics/projects/truck/Captura.JPG', '../Pics/projects/truck/Captura3.JPG'],
+    image: ['Pics/projects/truck/Captura.JPG', 'Pics/projects/truck/Captura3.JPG'],
     technologies: ['HTML', 'CSS', 'DOM JS', 'PHP'],
     live: 'http://appthetrucksavers.com/PagPrin.php',
     source: 'https://github.com/Dachrono/App-truck',
