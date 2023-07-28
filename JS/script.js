@@ -28,7 +28,7 @@ const cardsInfo = [
   {
     name: 'AVA website',
     description: 'Complete website for direct marketing and promotions.',
-    image: ['../Pics/projects/AVA/ava1.png', '../Pics/projects/AVA/ava2.png'],
+    image: ['Pics/projects/AVA/ava1.png', 'Pics/projects/AVA/ava2.png'],
     technologies: ['CSS', 'HTML'],
     live: 'https://dachrono.github.io/AVA/',
     source: 'https://github.com/Dachrono/AVA',
