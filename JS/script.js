@@ -2,7 +2,7 @@
 function hamFuntion() {
   if (document.getElementById('navBar').style.display === 'none') {
     document.getElementById('navBar').style.display = 'block';
-    document.getElementById('menu').style.position = 'fixed';
+    document.getElementById('menu').style.position = 'flex';
     document.getElementById('barClose').src = 'Pics/Icons/xicon.png';
   } else {
     document.getElementById('navBar').style.display = 'none';
