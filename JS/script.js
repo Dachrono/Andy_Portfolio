@@ -39,8 +39,7 @@ const cards = document.querySelector('.Cards');
 
 function wCard(index) {
   const element = document.createElement('section');
-  element.classList.remove(`WorksCard${index}`);
-  element.classList.add(`WorksCard${index + 1}`);
+  // element.classList.add(`WorksCard${index}`);
   element.innerHTML = `
     <div class="card1">
       <img src="${cardsInfo[index].image[0]}" width="210px" alt="screnshot">
@@ -55,7 +54,7 @@ function wCard(index) {
       <li>${cardsInfo[index].technologies[3]}</li>
     </ul>
     <div class="card4">
-      <button class="CardBut">See project</button>
+      <button type="button" class="CardBut">See project</button>
     </div>`;
   return element;
 }

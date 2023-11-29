@@ -1,5 +1,4 @@
 
-
 .NavBar {
   background-color: white;
   position: fixed;
@@ -33,7 +32,6 @@
 
 .container {
   width: 100%;
-
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: -100%;
