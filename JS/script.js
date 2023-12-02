@@ -19,10 +19,10 @@ function cerrar() {
 const cardsInfo = [
   {
     name: 'The truck savers',
-    description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, php, DOM js',
+    description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, PHP',
     image: ['Pics/projects/truck/Captura.JPG', 'Pics/projects/truck/Captura3.JPG'],
-    technologies: ['HTML', 'CSS', 'DOM JS', 'PHP'],
-    live: 'http://appthetrucksavers.com/PagPrin.php',
+    technologies: ['HTML', 'CSS', 'PHP', 'MySQL'],
+    live: 'https://github.com/Dachrono/App-truck',
     source: 'https://github.com/Dachrono/App-truck',
   },
   {
@@ -45,7 +45,7 @@ function wCard(index) {
       <img src="${cardsInfo[index].image[0]}" width="210px" alt="screnshot">
     </div>
     <div class="card2">
-      <h1>${cardsInfo[index].name}</h1>
+      <h2>${cardsInfo[index].name}</h2>
     </div>
     <ul class="card3">
       <li>${cardsInfo[index].technologies[0]}</li>
@@ -75,6 +75,10 @@ function popCard(index) {
       <div class="items">
 
         <h2 class="item1">${cardsInfo[index].name}</h2>
+        
+        <p class="item3">${cardsInfo[index].description}</p>
+
+        <h3 class="item5">Technologies used</h3>
 
         <ul class="item2">
           <li>${cardsInfo[index].technologies[0]}</li>
@@ -83,7 +87,6 @@ function popCard(index) {
           <li>${cardsInfo[index].technologies[3]}</li>
         </ul>
 
-        <p class="item3">${cardsInfo[index].description}</p>
 
         <div class="popButton item4">
           <button onclick="location.href='${cardsInfo[index].source}'">See source<img src="Pics/Icons/IconExp.png" alt="icon"></button>
