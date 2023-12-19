@@ -420,6 +420,16 @@ p {
     flex-wrap: wrap;
   }
 
+  /*// Contact Form //*/
+
+  .ContForm p {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    width: 60%;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
