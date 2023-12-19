@@ -65,6 +65,10 @@ p {
   color: black;
 }
 
+#title-c {
+  margin-bottom: 2rem;
+}
+
 .social {
   all: unset;
   display: flex;
@@ -433,14 +437,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    height: 60vh;
-  }
-
-  .info {
-    height: 60vh;
-  }
-
+  
   .ACards {
     width: 100vw;
     flex-direction: row;
