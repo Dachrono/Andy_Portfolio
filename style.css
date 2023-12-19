@@ -394,6 +394,8 @@ p {
     margin: 1rem 3rem 0 0;
   }
 
+  /*// Title //*/
+
   #barClose {
     width: 2rem;
   }
@@ -405,6 +407,19 @@ p {
   #title-c {
     font-size: 1.25rem;
   }
+
+  /*// Works cards //*/
+
+  .Cards {
+    flex-wrap: wrap;
+  }
+
+  /*// Skill cards //*/
+
+  .ACards {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
