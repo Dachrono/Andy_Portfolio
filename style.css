@@ -389,9 +389,16 @@ p {
 }
 
 @media screen and (min-width: 375px) {
-  body {
-    margin: 1px;
+  /*// NavBar //*/
+  .menu button {
+    margin: 1rem 3rem 0 0;
   }
+
+  #barClose {
+    width: 2rem;
+  }
+
+  
 }
 
 @media screen and (min-width: 768px) {
