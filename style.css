@@ -119,7 +119,7 @@ p {
   width: 100%;
   background-color: #ebf0ee;
   text-align: center;
-  height: 200px;
+  height: auto;
 }
 
 .card2 {

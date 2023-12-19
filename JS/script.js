@@ -18,6 +18,22 @@ function cerrar() {
 
 const cardsInfo = [
   {
+    name: 'Gourmet Experience - Final capstone project',
+    description: 'This project consists of a web application built with ReactJS and Redux Toolkit that allows users to book gourmet experiences that they can give to others, in a quick and easy way.',
+    image: ['Pics/projects/Gourmet1.png', 'Pics/projects/Gourmet2.png'],
+    technologies: ['Ruby on Rails', 'React/Redux', 'API', 'PostgreSql'],
+    live: 'https://gourmet-experiences-app.onrender.com/login',
+    source: 'https://github.com/Dachrono/final_capstone_front_end',
+  },
+  {
+    name: 'Budget app - Capstone project',
+    description: 'The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget',
+    image: ['Pics/projects/Budget1.png', 'Pics/projects/Budget2.png'],
+    technologies: ['Ruby on Rails', 'PostgreSql', 'HTML', 'CSS'],
+    live: 'https://budget-app-hisl.onrender.com/',
+    source: 'https://github.com/Dachrono/Budget-app',
+  },
+  {
     name: 'The truck savers',
     description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, PHP',
     image: ['Pics/projects/truck/Captura.JPG', 'Pics/projects/truck/Captura3.JPG'],
@@ -29,7 +45,7 @@ const cardsInfo = [
     name: 'AVA website',
     description: 'Complete website for direct marketing and promotions.',
     image: ['Pics/projects/AVA/ava1.png', 'Pics/projects/AVA/ava2.png'],
-    technologies: ['CSS', 'HTML'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive'],
     live: 'https://dachrono.github.io/AVA/',
     source: 'https://github.com/Dachrono/AVA',
   },
