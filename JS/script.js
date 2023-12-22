@@ -34,11 +34,11 @@ const cardsInfo = [
     source: 'https://github.com/Dachrono/Budget-app',
   },
   {
-    name: 'The truck savers',
-    description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, PHP',
+    name: 'The truck savers <br  />(THIS PROJECT HAS NOT LIVE BECAUSE IS AN INTERNAL WEB SERVICE)',
+    description: 'Web application designed to keep track of the guarantees and services of a workshop for trailers, designed in HTML/CSS, PHP.',
     image: ['Pics/projects/truck/Captura.JPG', 'Pics/projects/truck/Captura3.JPG'],
     technologies: ['HTML', 'CSS', 'PHP', 'MySQL'],
-    live: 'https://github.com/Dachrono/App-truck',
+    live: '',
     source: 'https://github.com/Dachrono/App-truck',
   },
   {
@@ -105,8 +105,8 @@ function popCard(index) {
 
 
         <div class="popButton item4">
-          <button onclick="location.href='${cardsInfo[index].source}'">See source<img src="Pics/Icons/IconExp.png" alt="icon"></button>
-          <button onclick="location.href='${cardsInfo[index].live}'">See live<img src="Pics/Icons/IconGit.png" alt="icon"></button>
+          <a href="${cardsInfo[index].source}" target="_blank" type="icon">See source<img src="Pics/Icons/IconGit.png" alt="icon" /></a>
+          <a href="${cardsInfo[index].live}" target="_blank" type="icon">See live<img src="Pics/Icons/IconExp.png" alt="icon" /></a>
         </div>
 
       </div>  

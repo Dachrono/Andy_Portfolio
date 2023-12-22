@@ -351,7 +351,7 @@ p {
 
 .projIma {
   margin-top: 3rem;
-  width: 80%;
+  max-width: 40%;
 }
 
 .items {
@@ -377,7 +377,7 @@ p {
   gap: 12px;
 }
 
-.popButton button {
+.item4 a {
   background: #36b37f;
   border: 0.1px;
   border-radius: 4px;
@@ -390,6 +390,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 3px;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 375px) {
