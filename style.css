@@ -43,6 +43,12 @@ body {
   border: none;
 }
 
+.menu button:hover {
+  background-color: #278638;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 3rem;
+}
 /* //////////////////////// Title ///////////////////////// */
 
 .info {
@@ -63,6 +69,15 @@ body {
 .title h2,
 p {
   color: black;
+}
+
+#title-b:hover {
+  width: 80%;
+  padding: 2rem;
+  height: 4rem;
+  background-color: rgba(39, 134, 56, 0.5);
+  color: #344563;
+  border-radius: 100px;
 }
 
 #title-c {
@@ -110,13 +125,19 @@ p {
   padding: 1rem;
   width: 20rem;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   color: #278638;
+}
+
+.Cards section:hover {
+  background-color: rgb(240, 194, 83, 0.9);
+  width: 25rem;
+  border-radius: 3rem;
 }
 
 .card1 {
@@ -158,13 +179,12 @@ p {
   padding: 12px;
   gap: 10px;
   background-color: #f0c253;
-  font-weight: 500;
+  font-weight: 900;
   font-size: 17px;
-  line-height: 24px;
   border-radius: 4px;
   width: 150px;
   height: 45px;
-  color: white;
+  color: #278638;
 }
 
 /* //////////////////////// About ///////////////////////// */
@@ -313,6 +333,10 @@ p {
   flex-direction: row;
   justify-content: center;
   gap: 3rem;
+}
+
+.final:hover {
+  gap: 6rem;
 }
 
 /* //////////////////////// Pop-up ///////////////////////// */
